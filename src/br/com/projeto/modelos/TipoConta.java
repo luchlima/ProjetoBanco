@@ -2,8 +2,9 @@ package br.com.projeto.modelos;
 
 import java.util.Scanner;
 
-public class Conta {
+public class TipoConta extends DepositoValor{
     public void tipoConta(){
+        DepositoValor depositoValor = new DepositoValor();
         Scanner leitura = new Scanner(System.in);
         System.out.println("""
                 Escolha o tipo de conta:
@@ -20,12 +21,12 @@ public class Conta {
             switch (numeroInserido){
                 case 1:
                     System.out.println("Você escolheu a conta corrente!");
-                    depositarValor();
+                    depositoValor.depositarValor();
                     dadosCorretos = true; // Sai do loop
                     break;
                 case 2:
                     System.out.println("Você escolheu a conta poupança!");
-                    depositarValor();
+                    depositoValor.depositarValor();
                     dadosCorretos = true; // Sai do loop
                     break;
                 case 3:
@@ -38,8 +39,5 @@ public class Conta {
         }
 
     }
-    public void depositarValor(){
-        
 
-    }
 }
