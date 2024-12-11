@@ -1,1 +1,1 @@
-Será necessário executar a classe "Principal", para o código funcinar por completo.
+Será necessário executar a classe "Principal", para o código funcionar por completo.
